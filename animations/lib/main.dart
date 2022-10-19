@@ -34,6 +34,8 @@ Route _createRoute() {
         const end = Offset.zero;
         final tween = Tween(begin: begin, end: end);
         final offsetAnimation = animation.drive(tween);
+        var curve = Curves.ease;
+        var curveTween = CurveTween(curve: curve);
 
         return SlideTransition(
           position: offsetAnimation,
