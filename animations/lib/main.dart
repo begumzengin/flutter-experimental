@@ -34,7 +34,11 @@ Route _createRoute() {
         const end = Offset.zero;
         final tween = Tween(begin: begin, end: end);
         final offsetAnimation = animation.drive(tween);
-        return child;
+
+        return SlideTransition(
+          position: offsetAnimation,
+          child: child,
+        );
       }));
 }
 
