@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Page1 extends StatelessWidget {
   const Page1({super.key});
@@ -6,13 +7,14 @@ class Page1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(backgroundColor: Color(0xFFD55C5A)),
       body: Center(
           child: ElevatedButton(
         onPressed: () {
           Navigator.of(context).push(_createRoute());
         },
-        child: const Text('GO!'),
+        child: Text('GO!', style: GoogleFonts.nunito()),
+        style: ElevatedButton.styleFrom(backgroundColor: Color(0xFFF5918F)),
       )),
     );
   }
@@ -51,9 +53,9 @@ class Page2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: const Center(
-        child: Text('page 2'),
+      appBar: AppBar(backgroundColor: Color(0xFFD55C5A)),
+      body: Center(
+        child: Text('page 2', style: GoogleFonts.nunito()),
       ),
     );
   }

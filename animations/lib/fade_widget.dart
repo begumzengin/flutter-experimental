@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FadeWidgetApp extends StatefulWidget {
   const FadeWidgetApp({super.key});
@@ -18,7 +19,9 @@ class _FadeWidgetAppState extends State<FadeWidgetApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('opacity demo'),
+        title: Text('opacity demo',
+            style: GoogleFonts.nunito(color: Color(0xFFE8D4CC))),
+        backgroundColor: Color(0xFFD55C5A),
       ),
       body: Center(
           child: AnimatedOpacity(
@@ -28,9 +31,7 @@ class _FadeWidgetAppState extends State<FadeWidgetApp> {
               duration: const Duration(milliseconds: 500),
               // The green box must be a child of the AnimatedOpacity widget.
               child: Container(
-                  width: 200.0,
-                  height: 200.0,
-                  color: Color.fromARGB(255, 243, 200, 251)))),
+                  width: 200.0, height: 200.0, color: Color(0xFF894242)))),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           // Call setState. This tells Flutter to rebuild the

@@ -7,7 +7,7 @@ class PhysicsCardDragDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(backgroundColor: Color(0xFFD55C5A)),
       body: const DraggableCard(
         child: FlutterLogo(
           size: 128,

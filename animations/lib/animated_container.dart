@@ -19,7 +19,9 @@ class _AnimatedContainerAppState extends State<AnimatedContainerApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('animated container'),
+        title: Text('animated container',
+            style: GoogleFonts.nunito(color: Color(0xFFE8D4CC))),
+        backgroundColor: Color(0xFFD55C5A),
       ),
       body: Center(
         child: AnimatedContainer(
