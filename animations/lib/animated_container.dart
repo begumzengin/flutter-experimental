@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
+import 'package:google_fonts/google_fonts.dart';
 
 class AnimatedContainerApp extends StatefulWidget {
   const AnimatedContainerApp({super.key});
