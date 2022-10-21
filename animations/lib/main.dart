@@ -14,7 +14,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: SnackbarApp(),
+      title: 'my animations app',
+      home: DrawerApp(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

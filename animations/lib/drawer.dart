@@ -1,3 +1,8 @@
+import 'package:animations/animated_container.dart';
+import 'package:animations/fade_widget.dart';
+import 'package:animations/page_route_builder.dart';
+import 'package:animations/physics_card_drag_demo.dart';
+import 'package:animations/snack_bar.dart';
 import 'package:flutter/material.dart';
 
 class DrawerApp extends StatelessWidget {
@@ -10,7 +15,8 @@ class DrawerApp extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(title: Text('drawer app')),
         body: const Center(
-          child: Text('this is a page'),
+          child: Text(
+              'this is a demo app where i practice \nsome flutter animations and designs'),
         ),
         drawer: Drawer(
             child: ListView(
@@ -20,18 +26,45 @@ class DrawerApp extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.blue,
               ),
-              child: Text('this is a drawer'),
+              child: Text('drawer header'),
             ),
             ListTile(
-              title: const Text('Item 1'),
+              title: const Text('animated container'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => AnimatedContainerApp()));
               },
             ),
             ListTile(
-              title: const Text('Item 2'),
+              title: const Text('fade widget'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => FadeWidgetApp()));
+              },
+            ),
+            ListTile(
+              title: const Text('card dragger'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => PhysicsCardDragDemo()));
+              },
+            ),
+            ListTile(
+              title: const Text('page route builder'),
+              onTap: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Page1()));
+              },
+            ),
+            ListTile(
+              title: const Text('snackbar'),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => SnackbarApp()));
               },
             ),
           ],
