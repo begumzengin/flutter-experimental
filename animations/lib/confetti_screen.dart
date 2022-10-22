@@ -52,6 +52,8 @@ class _ConfettiPageState extends State<ConfettiPage> {
             Color(0xFF758EB7),
             Color(0xFFA5CAD2),
           ],
+          gravity: 0.2,
+          emissionFrequency: 0.08,
         )
       ],
     );
