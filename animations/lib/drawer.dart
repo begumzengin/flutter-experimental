@@ -1,6 +1,7 @@
 import 'package:animations/animated_container.dart';
 import 'package:animations/confetti_screen.dart';
 import 'package:animations/fade_widget.dart';
+import 'package:animations/form_page.dart';
 import 'package:animations/page_route_builder.dart';
 import 'package:animations/physics_card_drag_demo.dart';
 import 'package:animations/snack_bar.dart';
