@@ -1,4 +1,5 @@
 import 'package:animations/animated_container.dart';
+import 'package:animations/confetti_screen.dart';
 import 'package:animations/fade_widget.dart';
 import 'package:animations/page_route_builder.dart';
 import 'package:animations/physics_card_drag_demo.dart';
@@ -86,6 +87,15 @@ class DrawerApp extends StatelessWidget {
               onTap: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => SnackbarApp()));
+              },
+            ),
+            ListTile(
+              title: Text('confetti',
+                  style: GoogleFonts.nunito(
+                      fontSize: 17, color: Color(0xFF894242))),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => ConfettiPage()));
               },
             ),
           ],
