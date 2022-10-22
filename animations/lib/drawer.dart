@@ -6,6 +6,7 @@ import 'package:animations/physics_card_drag_demo.dart';
 import 'package:animations/snack_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:animations/download_page.dart';
 
 class DrawerApp extends StatelessWidget {
   const DrawerApp({super.key});
@@ -96,6 +97,18 @@ class DrawerApp extends StatelessWidget {
               onTap: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => ConfettiPage()));
+              },
+            ),
+            ListTile(
+              title: Text('download button',
+                  style: GoogleFonts.nunito(
+                      fontSize: 17, color: Color(0xFF894242))),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            ExampleCupertinoDownloadButton()));
               },
             ),
           ],
