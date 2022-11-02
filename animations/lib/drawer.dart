@@ -7,6 +7,7 @@ import 'package:animations/snack_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:animations/download_page.dart';
+import 'package:animations/rotate_text_animation.dart';
 
 class DrawerApp extends StatelessWidget {
   const DrawerApp({super.key});
@@ -109,6 +110,15 @@ class DrawerApp extends StatelessWidget {
                     MaterialPageRoute(
                         builder: (context) =>
                             ExampleCupertinoDownloadButton()));
+              },
+            ),
+            ListTile(
+              title: Text('rotate text',
+                  style: GoogleFonts.nunito(
+                      fontSize: 17, color: Color(0xFF894242))),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => RotateText()));
               },
             ),
           ],
