@@ -18,7 +18,7 @@ class DrawerApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('drawer app',
+          title: Text('my animations app',
               style: GoogleFonts.nunito(color: Color(0xFFE8D4CC))),
           backgroundColor: Color(0xFFD55C5A),
         ),

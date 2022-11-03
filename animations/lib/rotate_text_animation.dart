@@ -28,7 +28,7 @@ class RotateTextPage extends StatelessWidget {
         const SizedBox(width: 20.0, height: 100.0),
         const Text(
           'be',
-          style: TextStyle(fontSize: 43.0),
+          style: TextStyle(fontSize: 43.0, color: Color(0xFF321E25)),
         ),
         const SizedBox(width: 20.0, height: 100.0),
         DefaultTextStyle(
