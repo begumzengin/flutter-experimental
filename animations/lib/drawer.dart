@@ -10,6 +10,7 @@ import 'package:animations/download_page.dart';
 import 'package:animations/rotate_text_animation.dart';
 import 'package:animations/fade_text_animation.dart';
 import 'package:animations/typer_text_animation.dart';
+import 'package:animations/typewriter_text_animation.dart';
 
 class DrawerApp extends StatelessWidget {
   const DrawerApp({super.key});
@@ -134,6 +135,15 @@ class DrawerApp extends StatelessWidget {
             ),
             ListTile(
               title: Text('typer',
+                  style: GoogleFonts.nunito(
+                      fontSize: 17, color: Color(0xFF894242))),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => TyperText()));
+              },
+            ),
+            ListTile(
+              title: Text('typewriter',
                   style: GoogleFonts.nunito(
                       fontSize: 17, color: Color(0xFF894242))),
               onTap: () {
