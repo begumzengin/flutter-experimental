@@ -30,6 +30,7 @@ class FadeTextPage extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 32.0,
                     fontWeight: FontWeight.bold,
+                    color: Color(0xFF002D40),
                   ),
                   child: AnimatedTextKit(
                     animatedTexts: [
