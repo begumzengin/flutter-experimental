@@ -25,7 +25,7 @@ class TyperTextPage extends StatelessWidget {
     return Scaffold(
         body: Center(
             child: SizedBox(
-                width: 250.0,
+                width: 420.0,
                 child: DefaultTextStyle(
                   style: GoogleFonts.lobster(
                     color: Color(0xFF001B48),

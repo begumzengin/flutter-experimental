@@ -25,7 +25,7 @@ class TypewriterPage extends StatelessWidget {
     return Scaffold(
         body: Center(
             child: SizedBox(
-                width: 250.0,
+                width: 380.0,
                 child: DefaultTextStyle(
                   style: GoogleFonts.robotoSlab(
                     color: Color(0xFF001B48),

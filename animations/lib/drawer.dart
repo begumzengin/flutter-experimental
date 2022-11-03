@@ -148,7 +148,7 @@ class DrawerApp extends StatelessWidget {
                       fontSize: 17, color: Color(0xFF894242))),
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => TyperText()));
+                    MaterialPageRoute(builder: (context) => Typewriter()));
               },
             ),
           ],
