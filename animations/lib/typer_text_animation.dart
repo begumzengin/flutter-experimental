@@ -27,9 +27,9 @@ class TyperTextPage extends StatelessWidget {
             child: SizedBox(
                 width: 250.0,
                 child: DefaultTextStyle(
-                  style: const TextStyle(
-                    fontSize: 30.0,
-                    fontFamily: 'Bobbers',
+                  style: GoogleFonts.lobster(
+                    color: Color(0xFF001B48),
+                    fontSize: 25.0,
                   ),
                   child: AnimatedTextKit(animatedTexts: [
                     TyperAnimatedText(
