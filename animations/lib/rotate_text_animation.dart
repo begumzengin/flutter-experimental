@@ -43,6 +43,7 @@ class RotateTextPage extends StatelessWidget {
               RotateAnimatedText('optimistic'),
               RotateAnimatedText('different'),
             ],
+            totalRepeatCount: 10,
           ),
         ),
       ]),

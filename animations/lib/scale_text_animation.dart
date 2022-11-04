@@ -28,10 +28,13 @@ class ScaleTextPage extends StatelessWidget {
                 width: 300.0,
                 child: DefaultTextStyle(
                     style: GoogleFonts.rubikMonoOne(fontSize: 70.0),
-                    child: AnimatedTextKit(animatedTexts: [
-                      ScaleAnimatedText('think'),
-                      ScaleAnimatedText('build'),
-                      ScaleAnimatedText('ship'),
-                    ])))));
+                    child: AnimatedTextKit(
+                      animatedTexts: [
+                        ScaleAnimatedText('think'),
+                        ScaleAnimatedText('build'),
+                        ScaleAnimatedText('ship'),
+                      ],
+                      totalRepeatCount: 10,
+                    )))));
   }
 }

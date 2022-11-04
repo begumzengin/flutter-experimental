@@ -45,6 +45,7 @@ class ColorizeTextPage extends StatelessWidget {
                 colors: colorizeColors,
                 speed: const Duration(milliseconds: 1000)),
           ],
+          totalRepeatCount: 10,
         ),
       )),
     );

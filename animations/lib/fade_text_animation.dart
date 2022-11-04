@@ -38,6 +38,7 @@ class FadeTextPage extends StatelessWidget {
                       FadeAnimatedText('do it right!'),
                       FadeAnimatedText('do it right now!'),
                     ],
+                    totalRepeatCount: 10,
                   ),
                 ))));
   }

@@ -31,11 +31,14 @@ class TyperTextPage extends StatelessWidget {
                     color: Color(0xFF001B48),
                     fontSize: 25.0,
                   ),
-                  child: AnimatedTextKit(animatedTexts: [
-                    TyperAnimatedText(
-                        '"life\'s but a walking shadow, a poor player,\nthat struts and frets his hour upon the stage\nand then is heard no more. it is a tale\ntold by an idiot, full of sound and fury,\nsignifying nothing."\n-william shakespeare, macbeth',
-                        speed: const Duration(milliseconds: 100)),
-                  ]),
+                  child: AnimatedTextKit(
+                    animatedTexts: [
+                      TyperAnimatedText(
+                          '"life\'s but a walking shadow, a poor player,\nthat struts and frets his hour upon the stage\nand then is heard no more. it is a tale\ntold by an idiot, full of sound and fury,\nsignifying nothing."\n-william shakespeare, macbeth',
+                          speed: const Duration(milliseconds: 100)),
+                    ],
+                    totalRepeatCount: 10,
+                  ),
                 ))));
   }
 }
