@@ -25,10 +25,9 @@ class ScaleTextPage extends StatelessWidget {
     return Scaffold(
         body: Center(
             child: SizedBox(
-                width: 250.0,
+                width: 300.0,
                 child: DefaultTextStyle(
-                    style: const TextStyle(
-                        fontSize: 70.0, fontFamily: 'Canterbury'),
+                    style: GoogleFonts.rubikMonoOne(fontSize: 70.0),
                     child: AnimatedTextKit(animatedTexts: [
                       ScaleAnimatedText('think'),
                       ScaleAnimatedText('build'),
