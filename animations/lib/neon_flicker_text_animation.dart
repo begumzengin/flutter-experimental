@@ -23,17 +23,18 @@ class NeonFlickerPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Color(0xFF5B4183),
         body: Center(
             child: SizedBox(
                 width: 250.0,
                 child: DefaultTextStyle(
-                    style: const TextStyle(
+                    style: GoogleFonts.unicaOne(
                         fontSize: 35,
-                        color: Colors.white,
+                        color: Color(0xFFAFE5D0),
                         shadows: [
                           Shadow(
-                              blurRadius: 7.0,
-                              color: Colors.white,
+                              blurRadius: 10.0,
+                              color: Color(0xFFAFE5D0),
                               offset: Offset(0, 0))
                         ]),
                     child: AnimatedTextKit(
