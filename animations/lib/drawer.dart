@@ -15,6 +15,7 @@ import 'package:animations/scale_text_animation.dart';
 import 'package:animations/colorize_text_animation.dart';
 import 'package:animations/liquidfill_text_animation.dart';
 import 'package:animations/neon_flicker_text_animation.dart';
+import 'package:animations/wavy_text_animation.dart';
 
 class DrawerApp extends StatelessWidget {
   const DrawerApp({super.key});
@@ -189,6 +190,15 @@ class DrawerApp extends StatelessWidget {
               onTap: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => NeonFlicker()));
+              },
+            ),
+            ListTile(
+              title: Text('wavy text',
+                  style: GoogleFonts.nunito(
+                      fontSize: 17, color: Color(0xFF894242))),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => WavyText()));
               },
             ),
           ],
