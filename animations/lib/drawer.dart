@@ -11,6 +11,7 @@ import 'package:animations/rotate_text_animation.dart';
 import 'package:animations/fade_text_animation.dart';
 import 'package:animations/typer_text_animation.dart';
 import 'package:animations/typewriter_text_animation.dart';
+import 'package:animations/scale_text_animation.dart';
 
 class DrawerApp extends StatelessWidget {
   const DrawerApp({super.key});
@@ -149,6 +150,15 @@ class DrawerApp extends StatelessWidget {
               onTap: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => Typewriter()));
+              },
+            ),
+            ListTile(
+              title: Text('scale',
+                  style: GoogleFonts.nunito(
+                      fontSize: 17, color: Color(0xFF894242))),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => ScaleText()));
               },
             ),
           ],
