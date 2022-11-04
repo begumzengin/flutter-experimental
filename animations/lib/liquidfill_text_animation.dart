@@ -27,7 +27,7 @@ class LiquidFillPage extends StatelessWidget {
             child: SizedBox(
                 width: 250.0,
                 child: TextLiquidFill(
-                  text: 'ASKIM',
+                  text: 'liquidy',
                   waveColor: Color(0xFF63BCC9),
                   boxBackgroundColor: Color(0xFFCDB3D4),
                   textStyle: TextStyle(

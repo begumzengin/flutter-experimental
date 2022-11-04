@@ -37,10 +37,10 @@ class ColorizeTextPage extends StatelessWidget {
     return Scaffold(
       body: Center(
           child: SizedBox(
-        width: 250.0,
+        width: 300.0,
         child: AnimatedTextKit(
           animatedTexts: [
-            ColorizeAnimatedText('askim',
+            ColorizeAnimatedText('colorize',
                 textStyle: colorizeTextStyle,
                 colors: colorizeColors,
                 speed: const Duration(milliseconds: 1000)),
