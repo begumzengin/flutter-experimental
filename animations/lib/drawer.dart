@@ -163,7 +163,7 @@ class DrawerApp extends StatelessWidget {
               },
             ),
             ListTile(
-              title: Text('scale',
+              title: Text('colorize',
                   style: GoogleFonts.nunito(
                       fontSize: 17, color: Color(0xFF894242))),
               onTap: () {
