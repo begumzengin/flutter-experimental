@@ -33,7 +33,8 @@ class TypewriterPage extends StatelessWidget {
                   ),
                   child: AnimatedTextKit(animatedTexts: [
                     TyperAnimatedText(
-                        'blessed are you whose worthiness gives scope\nbeing had, to triumph; being lacked, to hope.'),
+                        'blessed are you whose worthiness gives scope\nbeing had, to triumph; being lacked, to hope.',
+                        speed: const Duration(milliseconds: 100)),
                   ]),
                 ))));
   }

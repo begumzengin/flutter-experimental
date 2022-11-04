@@ -41,7 +41,9 @@ class ColorizeTextPage extends StatelessWidget {
         child: AnimatedTextKit(
           animatedTexts: [
             ColorizeAnimatedText('askim',
-                textStyle: colorizeTextStyle, colors: colorizeColors),
+                textStyle: colorizeTextStyle,
+                colors: colorizeColors,
+                speed: const Duration(milliseconds: 1000)),
           ],
         ),
       )),
