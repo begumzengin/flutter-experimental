@@ -17,6 +17,7 @@ import 'package:animations/liquidfill_text_animation.dart';
 import 'package:animations/neon_flicker_text_animation.dart';
 import 'package:animations/wavy_text_animation.dart';
 import 'package:animations/liquid_refresh.dart';
+import 'package:animations/popup.dart';
 
 class DrawerApp extends StatelessWidget {
   const DrawerApp({super.key});
@@ -209,6 +210,15 @@ class DrawerApp extends StatelessWidget {
               onTap: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => LiquidRefresh()));
+              },
+            ),
+            ListTile(
+              title: Text('popup',
+                  style: GoogleFonts.nunito(
+                      fontSize: 17, color: Color(0xFF894242))),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => DialogExample()));
               },
             ),
           ],
