@@ -40,7 +40,6 @@ dependencies:
   confetti: ^0.6.0
   animated_text_kit: ^4.2.2
   liquid_pull_to_refresh: ^3.0.1
-  flutter_localization: ^0.1.9
 
 dev_dependencies:
   flutter_test:
