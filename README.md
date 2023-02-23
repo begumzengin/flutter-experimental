@@ -1,2 +1,2 @@
-# flutter-animations
+# flutter-experimental
  Various animations done with Flutter
